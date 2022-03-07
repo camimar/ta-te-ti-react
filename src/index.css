@@ -1,13 +1,38 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: url("./assets/papel.jpg");
+  background-size: cover;
+  font-family: "Century Gothic", Futura, sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 { 
+  color: #534340;
+  text-shadow: 7px 4px 5px #e7ad55;
+}
+.juego {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fila-tablero {
+  display: flex;
+  flex-flow: row nowrap
+}
+.cuadrado {
+  background-color: gray;
+  color: white;
+  border: 1px solid #999;
+  padding: 0;
+  font-size: 84px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+.cuadrado:focus {
+  outline: none;
+  background-color: #222;
+}
+.estado {
+  margin: 20px;
+  text-align: center;
+  font-size: 28px;
 }
